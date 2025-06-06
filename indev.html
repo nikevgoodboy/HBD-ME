@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>HBD-Nikev</title>
+</head>
+<body class="bg-gradient-to-br from-yellow-100 to-pink-100">
+
+  <!-- 🎂 Navbar -->
+  <nav class="bg-white shadow-md py-3">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      
+      <!-- Logo with Emoji -->
+      <div class="text-2xl font-bold text-pink-500 flex items-center gap-2">
+        🎂 <span class="text-pink-600">NIKEV</span>
+      </div>
+
+      <!-- Menu - Desktop -->
+      <div class="hidden md:flex gap-6 text-lg font-medium">
+        <a href="#" class="text-pink-600 hover:text-pink-400">🎈 Home</a>
+        <a href="gife.html" class="text-pink-600 hover:text-pink-400">🎁 Gifts</a>
+        <a href="cake.html" class="text-pink-600 hover:text-pink-400">🍰 Cake</a>
+        <a href="gallery.html" class="text-pink-600 hover:text-pink-400">📸 Gallery</a>
+      </div>
+
+      <!-- Hamburger Menu - Mobile -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-pink-600 text-2xl">🍔</button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 text-pink-600 font-medium text-lg">
+      <a href="#" class="block">🎈 Home</a>
+      <a href="gife.html" class="block">🎁 Gifts</a>
+      <a href="cake.html" class="block">🍰 Cake</a>
+      <a href="gallery.html" class="block">📸 Gallery</a>
+    </div>
+  </nav>
+
+  <!-- Toggle Menu Script -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+    <!-- 🎉 Main Content -->
+    <div class="bg-gradient-to-br from-pink-100 via-yellow-100 to-purple-100 min-h-screen flex items-center justify-center">
+       <!-- Birthday Header -->
+    <header class="text-center p-6">
+    <h1 class="text-5xl md:text-6xl font-bold text-pink-600 mb-4 animate-bounce">
+      🎉 Happy Birthday, <span class="text-purple-600">Nikev</span>! 🎂
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-700">
+      Born on <span class="font-semibold text-blue-600">07 June 2006</span> 🎈🎁✨
+    </p>
+    <p class="mt-4 text-lg text-gray-600 italic">
+      Wishing you joy, health, and sweet surprises today and always! 💖
+    </p>
+  </header>
+   <!-- Right: Image -->
+    <div class="mt-8 md:mt-0 md:w-1/2 flex justify-center">
+      <img 
+        src="/Images/Kevin.jpg" 
+        alt="Birthday Cake" 
+        class="w-72 h-auto rounded-xl shadow-lg"
+      />
+    </div>
+    </div>
+
+    <footer class="bg-pink-100 border-t border-pink-200 mt-10">
+  <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+
+    <!-- Left: Message -->
+    <div class="mb-4 md:mb-0">
+      <h2 class="text-xl font-semibold text-pink-600">
+        🎉 Thanks for celebrating with Nikev!
+      </h2>
+      <p class="text-gray-600 text-sm">
+        Born on <span class="font-medium text-blue-600">June 7, 2006</span> 🎂 Wishing love & laughter always! 💖
+      </p>
+    </div>
+
+    <!-- Right: Emojis and Love -->
+    <div class="text-2xl flex gap-3 text-pink-500">
+      🎈 🎁 🎂 🥳 💖
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="text-center py-4 text-sm text-gray-500">
+    © 2025 Made with ❤️ for <span class="text-pink-600 font-medium">Nikev's Birthday</span>
+  </div>
+</footer>
+
+</body>
+</html>

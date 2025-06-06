@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Cake for Nikev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- 🎂 Navbar -->
+  <nav class="bg-white shadow-md py-3">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      
+      <!-- Logo with Emoji -->
+      <div class="text-2xl font-bold text-pink-500 flex items-center gap-2">
+        🎂 <span class="text-pink-600">NIKEV</span>
+      </div>
+
+      <!-- Menu - Desktop -->
+      <div class="hidden md:flex gap-6 text-lg font-medium">
+        <a href="indev.html" class="text-pink-600 hover:text-pink-400">🎈 Home</a>
+        <a href="gife.html" class="text-pink-600 hover:text-pink-400">🎁 Gifts</a>
+        <a href="#" class="text-pink-600 hover:text-pink-400">🍰 Cake</a>
+        <a href="gallery.html" class="text-pink-600 hover:text-pink-400">📸 Gallery</a>
+      </div>
+
+      <!-- Hamburger Menu - Mobile -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-pink-600 text-2xl">🍔</button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 text-pink-600 font-medium text-lg">
+      <a href="indev.html" class="block">🎈 Home</a>
+      <a href="gife.html" class="block">🎁 Gifts</a>
+      <a href="#" class="block">🍰 Cake</a>
+      <a href="gallery.html" class="block">📸 Gallery</a>
+    </div>
+  </nav>
+
+  <!-- Toggle Menu Script -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>  
+  <!-- Header -->
+  <header class="text-center mt-10">
+    <h1 class="text-5xl font-bold text-pink-600 animate-bounce mb-2">
+      🎂 Birthday Cake for Nikev!
+    </h1>
+    <p class="text-gray-700 text-lg">Let’s enjoy some sweet moments together 🍰✨</p>
+  </header>
+
+  <!-- Cake Section -->
+  <section class="mt-10 flex flex-col md:flex-row items-center gap-10 max-w-5xl w-full">
+
+    <!-- Cake Image -->
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img 
+        src="Images/772b9d7f8313e7ac1c104ac825275be7.jpg" 
+        alt="Birthday Cake" 
+        class="rounded-2xl shadow-xl w-72 h-auto hover:scale-105 transition"
+      />
+    </div>
+
+    <!-- Message Card -->
+    <div class="w-full md:w-1/2 bg-white rounded-xl shadow-lg p-6 text-center">
+      <h2 class="text-2xl font-semibold text-pink-500 mb-2">Happy Birthday, Nikev! 🎉</h2>
+      <p class="text-gray-700 text-md leading-relaxed">
+        Here's a delicious cake just for you. Wishing you a day filled with sweetness,
+        laughter, and warm memories. May all your dreams come true! 🎁💖
+      </p>
+      <p class="mt-4 text-sm text-gray-500 italic">— From your friends and loved ones 💌</p>
+    </div>
+
+  </section>
+      
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-600 mt-16 mb-4">
+    © 2025 — Happy Birthday, Nikev 🎂 Made with love and frosting 🍓
+  </footer>
+
+</body>
+</html>

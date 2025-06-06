@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikev's Birthday Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ <!-- 🎂 Navbar -->
+  <nav class="bg-white shadow-md py-3">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      
+      <!-- Logo with Emoji -->
+      <div class="text-2xl font-bold text-pink-500 flex items-center gap-2">
+        🎂 <span class="text-pink-600">NIKEV</span>
+      </div>
+
+      <!-- Menu - Desktop -->
+      <div class="hidden md:flex gap-6 text-lg font-medium">
+        <a href="indev.html" class="text-pink-600 hover:text-pink-400">🎈 Home</a>
+        <a href="gife.html" class="text-pink-600 hover:text-pink-400">🎁 Gifts</a>
+        <a href="cake.html" class="text-pink-600 hover:text-pink-400">🍰 Cake</a>
+        <a href="#" class="text-pink-600 hover:text-pink-400">📸 Gallery</a>
+      </div>
+
+      <!-- Hamburger Menu - Mobile -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-pink-600 text-2xl">🍔</button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 text-pink-600 font-medium text-lg">
+      <a href="indev.html" class="block">🎈 Home</a>
+      <a href="gife.html" class="block">🎁 Gifts</a>
+      <a href="cake.html" class="block">🍰 Cake</a>
+      <a href="#" class="block">📸 Gallery</a>
+    </div>
+  </nav>
+
+  <!-- Toggle Menu Script -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>  
+<div class="bg-gradient-to-br from-pink-100 via-yellow-100 to-purple-100 min-h-screen text-gray-800">
+    <!-- Header -->
+  <header class="text-center py-10">
+    <h1 class="text-5xl font-bold text-pink-600 mb-2 animate-bounce">📸 Birthday Gallery for Nikev</h1>
+    <p class="text-lg text-gray-700">Cherishing memories from June 7 🎉</p>
+  </header>
+
+  <!-- Gallery Grid -->
+  <section class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-16">
+    
+    <!-- Image 1 -->
+    <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition duration-300">
+      <img src="Images/IMG_4510.jpg" alt="Birthday Celebration">
+    </div>
+
+    <!-- Image 2 -->
+    <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition duration-300">
+      <img src="Images/IMG_4145.jpg" alt="Cake">
+    </div>
+
+    <!-- Image 3 -->
+    <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition duration-300">
+      <img src="Images/IMG_0982.jpg" alt="Gifts and Balloons">
+    </div>
+
+    <!-- Image 4 -->
+    <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition duration-300">
+      <img src="Images/IMG_1318.jpg" alt="Wrapped Gift">
+    </div>
+
+    <!-- Image 5 -->
+    <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition duration-300">
+      <img src="Images/IMG_4249.png" alt="Birthday Candles">
+    </div>
+
+    <!-- Image 6 -->
+    <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition duration-300">
+      <img src="Images/IMG_4511.jpg" alt="Party Table">
+    </div>
+
+     <!-- Image 7 -->
+    <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition duration-300">
+      <img src="Images/IMG_9814.jpg" alt="Party Table">
+    </div>
+
+     <!-- Image 8 -->
+    <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition duration-300">
+      <img src="Images/att.ooq7vkc_0Mz4mutMbO-F66uatysg5mFKrOpfqBLacl0.jpg" alt="Party Table">
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-600 pb-6">
+    © 2025 — Birthday Gallery for <span class="text-pink-600 font-semibold">Nikev</span> 🎉 With love 💖
+  </footer>
+</div>
+  
+
+</body>
+</html>
